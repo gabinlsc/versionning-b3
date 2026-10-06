@@ -4,9 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Versionning B3</title>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({ release: "b3-versionning@1.2.0", environment: "dev" });
+    };
+  </script>
+  <script
+    src="https://js-de.sentry-cdn.com/81a6c932208577458d4b05d6b9d3cec4.min.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
   <h1>Versionning B3</h1>
   <p>Bienvenue sur la page du projet.</p>
+  <button type="button" onclick="myUndefinedFunction()">Tester Sentry</button>
 </body>
 </html>
